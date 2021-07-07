@@ -152,6 +152,15 @@ function articleMaker({title, date, firstParagraph, secondParagraph, thirdParagr
   return articleDiv
 }
 
+const newArticle = {
+  title: "All work and no play makes Jack a dull boy", 
+  date: "July 7, 2021", 
+  firstParagraph: "All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.",
+  secondParagraph: "All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.",
+  thirdParagraph: "All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.",
+}
+data.push(newArticle);
+
 data.forEach(data => {
   const article = articleMaker(data)
   document.body.appendChild(article)
